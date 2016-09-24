@@ -22,6 +22,7 @@ gem "turbolinks"
 gem "jbuilder", "~> 2.0"
 # bundle exec rake doc:rails generates the API under doc/api.
 gem "sdoc", "~> 0.4.0", group: :doc
+gem "haml"
 
 # Use ActiveModel has_secure_password
 # gem "bcrypt", "~> 3.1.7"
@@ -54,3 +55,6 @@ gem "therubyracer", platforms: :ruby
 gem "react-router-rails", "~> 0.13.3"
 gem "reactrb-router"
 gem "reactive-record", ">= 0.8.0"
+
+gem "bootstrap"
+gem "rails-assets-tether"

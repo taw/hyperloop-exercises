@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   mount ReactiveRecord::Engine => '/rr'
-  get "/" => "home#show"
+  # Not the securest thing ever, but can't be bothered to repeat myself
+  get "/:action" => "home#:action"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

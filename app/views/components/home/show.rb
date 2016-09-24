@@ -35,9 +35,6 @@ module Components
       def render
         puts "Rendering my first component!"
         "hello #{params.say_hello_to if params.say_hello_to}"
-        # div do
-        #   "Home::Show"
-        # end
       end
     end
   end
