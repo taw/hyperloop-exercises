@@ -1,8 +1,9 @@
 module Components
   module Chat
     class FormattedDiv < React::Component::Base
+      param :markdown, type: String
       def render
-        "convert and display markdown"
+        params.markdown
       end
     end
   end
