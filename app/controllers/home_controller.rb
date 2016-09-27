@@ -6,4 +6,8 @@ class HomeController < ApplicationController
   def clock
     render_component
   end
+
+  def unit_converter
+    render_component
+  end
 end
