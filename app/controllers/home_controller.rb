@@ -7,7 +7,11 @@ class HomeController < ApplicationController
     render_component
   end
 
-  def unit_converter
+  def temperature_converter
+    render_component
+  end
+
+  def bmi_calculator
     render_component
   end
 end

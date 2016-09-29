@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   get "/" => "home#index"
   get "/show" => "home#show"
   get "/clock" => "home#clock"
-  get "/unit_converter" => "home#unit_converter"
+  get "/temperature_converter" => "home#temperature_converter"
+  get "/bmi_calculator" => "home#bmi_calculator"
 end
