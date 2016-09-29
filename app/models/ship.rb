@@ -32,9 +32,15 @@ class Ship < Struct.new(:name, :manpower, :ic)
     ]
 
     def all
-      @all ||= SHIP_DATA.map{|name, manpower, ic|
-        Ship.new(name, manpower, ic)
-      }
+      @all ||= Hash[
+        SHIP_DATA.map{|name, manpower, ic|
+          [name, Ship.new(name, manpower, ic)]
+        }
+      ]
+    end
+
+    def [](name)
+      all[name] or raise "No such ship `#{name}'"
     end
   end
 end

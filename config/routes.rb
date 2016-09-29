@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   get "/temperature_converter" => "units#temperature_converter"
   get "/bmi_calculator" => "units#bmi_calculator"
   get "/todo_list" => "todo#todo_list"
+
+  get "/hoi4/fleet_designer" => "hoi4#fleet_designer"
 end
