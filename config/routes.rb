@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get "/clock" => "home#clock"
   get "/temperature_converter" => "home#temperature_converter"
   get "/bmi_calculator" => "home#bmi_calculator"
+  get "/todo_list" => "home#todo_list"
 end

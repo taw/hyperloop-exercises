@@ -14,4 +14,8 @@ class HomeController < ApplicationController
   def bmi_calculator
     render_component
   end
+
+  def todo_list
+    render_component
+  end
 end
