@@ -2,8 +2,8 @@ module Components
   module Home
     class TodoInput < React::Component::Base
       param :item
-      param :on_change
-      param :on_submit
+      param :on_change, type: Proc
+      param :on_submit, type: Proc
       def render
         li do
           input(
@@ -12,8 +12,11 @@ module Components
             style: {"width" => "80%"},
             placeholder: "What do you need to do?",
           ).on(:change) {|e|
-            puts "CHANGE #{e.target.value}"
             params.on_change(e.target.value)
+          }.on(:key_press) {|e|
+            if e.key == "Enter"
+              params.on_submit(e.target.value)
+            end
           }
         end
       end
