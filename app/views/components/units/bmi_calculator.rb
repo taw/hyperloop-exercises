@@ -1,5 +1,5 @@
 module Components
-  module Home
+  module Units
     class BmiCalculator < React::Component::Base
       before_mount do
         state.height! 170

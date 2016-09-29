@@ -1,5 +1,5 @@
 module Components
-  module Home
+  module Units
     class UnitInput < React::Component::Base
       param :unit, type: String
       param :value

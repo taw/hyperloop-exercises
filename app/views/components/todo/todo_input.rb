@@ -1,5 +1,5 @@
 module Components
-  module Home
+  module Todo
     class TodoInput < React::Component::Base
       param :item
       param :on_change, type: Proc

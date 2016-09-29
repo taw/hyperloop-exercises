@@ -1,6 +1,6 @@
 %h3 Pages
 %ul
   %li= link_to "Clock", action: "clock"
-  %li= link_to "Temperature converter", action: "temperature_converter"
-  %li= link_to "BMI calculator", action: "bmi_calculator"
-  %li= link_to "TODO list", action: "todo_list"
+  %li= link_to "Temperature converter", action: "temperature_converter", controller: "units"
+  %li= link_to "BMI calculator", action: "bmi_calculator", controller: "units"
+  %li= link_to "TODO list", action: "todo_list", controller: "todo"

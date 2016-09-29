@@ -1,5 +1,5 @@
 module Components
-  module Home
+  module Units
     class TemperatureConverter < React::Component::Base
       before_mount do
         set_celcius 0

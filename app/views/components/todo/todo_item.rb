@@ -1,5 +1,5 @@
 module Components
-  module Home
+  module Todo
     class TodoItem < React::Component::Base
       param :item
       param :on_done, type: Proc

@@ -1,5 +1,5 @@
 module Components
-  module Home
+  module Todo
     class TodoList < React::Component::Base
       before_mount do
         state.todo! [

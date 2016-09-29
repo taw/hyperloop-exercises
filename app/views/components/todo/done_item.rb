@@ -1,5 +1,5 @@
 module Components
-  module Home
+  module Todo
     class DoneItem < React::Component::Base
       param :item
       param :on_undo, type: Proc
