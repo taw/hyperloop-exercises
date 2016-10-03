@@ -7,14 +7,14 @@ module Components
 
       def render
         div(className: "row") do
-          div(className: "col-xs-4") {
-            h6 { params.ship_name }
+          label(className: "col-xs-4 col-form-label", style: {"text-align"=>"right"}) {
+            params.ship_name
           }
           div(className: "col-xs-8") {
             input(
               type: :text,
               value: params.count,
-              style: {"width" => "100%"}
+              className: "form-control"
             ).on(:change) {|e|
               params.on_change(e.target.value.to_i)
             }
