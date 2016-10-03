@@ -13,8 +13,8 @@ module Components
             "Fleet Composition"
           end
           Ship.all.each do |name, ship|
-            ShipCount(
-              ship_name: ship.name,
+            CountInput(
+              name: ship.name,
               count: state.ships[ship.name],
               on_change: proc{|v|
                 v = 0 if v < 0

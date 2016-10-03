@@ -1,14 +1,14 @@
 module Components
   module Hoi4
-    class ShipCount < React::Component::Base
-      param :ship_name, type: String
+    class CountInput < React::Component::Base
+      param :name, type: String
       param :count
       param :on_change, type: Proc
 
       def render
         div(className: "row") do
-          label(className: "col-xs-4 col-form-label", style: {"text-align"=>"right"}) {
-            params.ship_name
+          label(className: "col-xs-4 col-form-label", style: {"textAlign"=>"right"}) {
+            params.name
           }
           div(className: "col-xs-8") {
             input(

@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   get "/todo_list" => "todo#todo_list"
 
   get "/hoi4/fleet_designer" => "hoi4#fleet_designer"
+  get "/hoi4/equipment_designer" => "hoi4#equipment_designer"
 end
