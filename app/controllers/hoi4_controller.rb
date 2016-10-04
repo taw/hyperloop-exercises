@@ -6,4 +6,8 @@ class Hoi4Controller < ApplicationController
   def equipment_designer
     render_component
   end
+
+  def suppression_planner
+    render_component
+  end
 end

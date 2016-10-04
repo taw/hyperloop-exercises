@@ -11,4 +11,5 @@ Rails.application.routes.draw do
 
   get "/hoi4/fleet_designer" => "hoi4#fleet_designer"
   get "/hoi4/equipment_designer" => "hoi4#equipment_designer"
+  get "/hoi4/suppression_planner" => "hoi4#suppression_planner"
 end

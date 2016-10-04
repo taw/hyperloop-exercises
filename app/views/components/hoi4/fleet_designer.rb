@@ -19,7 +19,8 @@ module Components
               on_change: proc{|v|
                 v = 0 if v < 0
                 state.ships! state.ships.merge(ship.name => v)
-              })
+              }
+            )
           end
           h3 do
             "Fleet Cost"
