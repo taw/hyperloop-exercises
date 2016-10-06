@@ -7,7 +7,7 @@ module Components
 
       def render
         div(className: "row") do
-          label(className: "col-xs-4 col-form-label", style: {"text-align"=>"right"}) {
+          label(className: "col-xs-4 col-form-label", style: {textAlign=>"right"}) {
             params.unit
           }
           div(className: "col-xs-8") {

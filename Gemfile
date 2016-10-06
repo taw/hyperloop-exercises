@@ -58,3 +58,6 @@ gem "reactive-record", ">= 0.8.0"
 
 gem "bootstrap"
 gem "rails-assets-tether"
+
+gem "opal_hot_reloader", git: "https://github.com/fkchang/opal-hot-reloader.git"
+gem "foreman"
