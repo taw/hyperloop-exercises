@@ -50,6 +50,7 @@ gem "reactrb-rails-generator"
 
 gem "reactrb"
 gem "react-rails", ">= 1.3.0"
+gem "opal", "0.9.4"
 gem "opal-rails", ">= 0.8.1"
 gem "therubyracer", platforms: :ruby
 gem "react-router-rails", "~> 0.13.3"

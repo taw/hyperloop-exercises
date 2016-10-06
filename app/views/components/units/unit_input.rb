@@ -6,8 +6,8 @@ module Components
       param :on_change, type: Proc
 
       def render
-        div(className: "row") do
-          label(className: "col-xs-4 col-form-label", style: {textAlign=>"right"}) {
+        div.row do
+          label(className: "col-xs-4 col-form-label", style: {"textAlign"=>"right"}) {
             params.unit
           }
           div(className: "col-xs-8") {

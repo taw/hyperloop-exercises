@@ -6,7 +6,7 @@ module Components
       end
 
       def render
-        div(class: "row") do
+        div.row do
           div(class: "col-sm-6") do
             h1 do
               "The current time"
